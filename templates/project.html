@@ -1,0 +1,48 @@
+{% extends 'base-page.html' %}
+
+{% block title %}
+{{ project_name }}
+{% endblock %}
+
+{% block body %}
+<body>
+    <main class="container">
+        <div class="row g-5">
+            <div class="col-md-8">
+                <article class="blog-post">
+                    <h2 class="blog-post-title mb-1">{{ project_name }}</h2>
+                    <p> {{ description_1 }}</p>
+                    <p>{{ description_2 }}</p>
+                    <hr>
+
+                </article>
+            </div>
+            <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                    <div class="p-4">
+                        <h4 class="fst-italic">Skills</h4>
+                        <ol class="list-unstyled mb-0">
+                            <li>Python</li>
+                            <li>Django, Flask</li>
+                            <li>PostgreSQL</li>
+                            <li>Django ORM, SQLAlchemy</li>
+                            <li>Django REST</li>
+                            <li>Docker</li>
+                            <li>HTML, CSS</li>
+                        </ol>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="fst-italic">Contacts</h4>
+                        <ol class="list-unstyled">
+                            <li>GitHub:<a href="https://github.com/R1ckC137">R1ckC137</a></li>
+                            <li>LinkedIn:<a href="https://www.linkedin.com/in/yaroslav-povar-32a316241/">Yaroslav Povar</a></li>
+                            <li>Gmail: yaroslav.powar@gmail.com</li>
+                            <li>Phone: +38 093 37 57 363</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+{% endblock %}

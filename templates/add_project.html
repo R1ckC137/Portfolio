@@ -1,0 +1,21 @@
+{% extends 'base-page.html' %}
+
+{% block title %}
+Add project
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Add project</h1>
+    <form method="POST" action="/add_project">
+        <input type="text" name="project_name" id="project_name" placeholder="Enter project name" class="form-control"><br>
+        <textarea name="intro" id="intro" placeholder="Enter intro" class="form-control"></textarea><br>
+        <textarea name="description_1" id="description_1" placeholder="Enter description" class="form-control"></textarea><br>
+        <textarea name="description_2" id="description_2" placeholder="Enter enter the next paragraph of description" class="form-control"></textarea><br>
+        <input type="text" name="technologies" id="technologies" placeholder="Enter technologies" class="form-control"><br>
+        <div class="text-center">
+            <input type="submit" class="btn btn-success my-3 mx-auto" value="Add project"><br>
+        </div>
+    </form>
+</div>
+{% endblock %}
